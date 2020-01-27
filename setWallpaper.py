@@ -1,7 +1,12 @@
+# Module for setting an image as the wallpaper in Windows
+
 import ctypes
 from ctypes import wintypes
 
 def set_wallpaper(image_path):
+    """
+    Sets a given image as the wallpaper
+    """
 
     SPI_SETDESKWALLPAPER    = 0x0014
     SPIF_UPDATEINFILE       = 0x0001
